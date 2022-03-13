@@ -1,6 +1,6 @@
 ﻿namespace Room
 {
-    partial class RoomLauncher
+    partial class RoomLauncher2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,78 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomLauncher));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textLocalPort = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textLocalIp = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomLauncher2));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textRemotePort = new System.Windows.Forms.TextBox();
             this.textRemoteIp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonConnect = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textMessage = new System.Windows.Forms.TextBox();
-            this.listMessage = new System.Windows.Forms.ListBox();
+            this.TextMessage = new System.Windows.Forms.TextBox();
             this.buttonSend = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1.SuspendLayout();
+            this.DataBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listMessage = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lightToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textLocalPort);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textLocalIp);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(28, 27);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Me";
-            // 
-            // textLocalPort
-            // 
-            this.textLocalPort.Location = new System.Drawing.Point(94, 45);
-            this.textLocalPort.Name = "textLocalPort";
-            this.textLocalPort.Size = new System.Drawing.Size(100, 20);
-            this.textLocalPort.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Port";
-            // 
-            // textLocalIp
-            // 
-            this.textLocalIp.Location = new System.Drawing.Point(94, 19);
-            this.textLocalIp.Name = "textLocalIp";
-            this.textLocalIp.Size = new System.Drawing.Size(100, 20);
-            this.textLocalIp.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "IP";
             // 
             // groupBox2
             // 
@@ -108,12 +64,12 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.buttonConnect);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(245, 27);
+            this.groupBox2.Location = new System.Drawing.Point(28, 27);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Friend";
+            this.groupBox2.Text = "Server";
             // 
             // textRemotePort
             // 
@@ -157,21 +113,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "IP";
             // 
-            // textMessage
+            // TextMessage
             // 
-            this.textMessage.Location = new System.Drawing.Point(28, 418);
-            this.textMessage.Name = "textMessage";
-            this.textMessage.Size = new System.Drawing.Size(529, 20);
-            this.textMessage.TabIndex = 5;
-            this.textMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textMessage_KeyDown);
-            // 
-            // listMessage
-            // 
-            this.listMessage.FormattingEnabled = true;
-            this.listMessage.Location = new System.Drawing.Point(28, 135);
-            this.listMessage.Name = "listMessage";
-            this.listMessage.Size = new System.Drawing.Size(646, 277);
-            this.listMessage.TabIndex = 6;
+            this.TextMessage.Location = new System.Drawing.Point(28, 418);
+            this.TextMessage.Name = "TextMessage";
+            this.TextMessage.Size = new System.Drawing.Size(529, 20);
+            this.TextMessage.TabIndex = 5;
+            this.TextMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textMessage_KeyDown);
             // 
             // buttonSend
             // 
@@ -183,20 +131,11 @@
             this.buttonSend.UseVisualStyleBackColor = true;
             this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(505, 53);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(99, 59);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.optionsToolStripMenuItem});
+            this.aboutToolStripMenuItem1,
+            this.optionsToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -241,53 +180,116 @@
             this.darkToolStripMenuItem.Text = "Dark";
             this.darkToolStripMenuItem.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
             // 
-            // RoomLauncher
+            // DataBox
+            // 
+            this.DataBox.Location = new System.Drawing.Point(414, 62);
+            this.DataBox.Name = "DataBox";
+            this.DataBox.Size = new System.Drawing.Size(100, 20);
+            this.DataBox.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(324, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Username: ";
+            // 
+            // listMessage
+            // 
+            this.listMessage.FormattingEnabled = true;
+            this.listMessage.Location = new System.Drawing.Point(28, 133);
+            this.listMessage.Name = "listMessage";
+            this.listMessage.Size = new System.Drawing.Size(529, 264);
+            this.listMessage.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(585, 133);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 226);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
+            this.aboutToolStripMenuItem1.Text = "About";
+            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // optionsToolStripMenuItem1
+            // 
+            this.optionsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.themeToolStripMenuItem});
+            this.optionsToolStripMenuItem1.Name = "optionsToolStripMenuItem1";
+            this.optionsToolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
+            this.optionsToolStripMenuItem1.Text = "Options";
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lightToolStripMenuItem1,
+            this.darkToolStripMenuItem1});
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
+            // 
+            // lightToolStripMenuItem1
+            // 
+            this.lightToolStripMenuItem1.Name = "lightToolStripMenuItem1";
+            this.lightToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.lightToolStripMenuItem1.Text = "Light";
+            this.lightToolStripMenuItem1.Click += new System.EventHandler(this.lightToolStripMenuItem_Click);
+            // 
+            // darkToolStripMenuItem1
+            // 
+            this.darkToolStripMenuItem1.Name = "darkToolStripMenuItem1";
+            this.darkToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.darkToolStripMenuItem1.Text = "Dark";
+            this.darkToolStripMenuItem1.Click += new System.EventHandler(this.darkToolStripMenuItem_Click);
+            // 
+            // RoomLauncher2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listMessage);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DataBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonSend);
-            this.Controls.Add(this.listMessage);
-            this.Controls.Add(this.textMessage);
+            this.Controls.Add(this.TextMessage);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "RoomLauncher";
-            this.Text = "Room";
+            this.Name = "RoomLauncher2";
+            this.Text = "Room 2.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textLocalPort;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textLocalIp;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textRemotePort;
         private System.Windows.Forms.TextBox textRemoteIp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonConnect;
-        private System.Windows.Forms.TextBox textMessage;
-        private System.Windows.Forms.ListBox listMessage;
+        private System.Windows.Forms.TextBox TextMessage;
         private System.Windows.Forms.Button buttonSend;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -296,6 +298,14 @@
         private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TextBox DataBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listMessage;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem1;
     }
 }
 
